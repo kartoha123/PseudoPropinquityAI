@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="298.0" prefWidth="381.0" xmlns:fx="http://javafx.com/fxml/1" 
+            xmlns="http://javafx.com/javafx/8" 
+            fx:controller="com.bunjlabs.pseudopropinquityai.editor.EditorElementSceneController">
+    <children>
+        <Button onAction="#handleDrawAButtonAction" layoutX="31.0" layoutY="133.0" mnemonicParsing="false" text="Draw figure" />
+        <Separator layoutX="188.0" orientation="VERTICAL" prefHeight="316.0" prefWidth="7.0" />
+        <Label layoutX="31.0" layoutY="32.0" prefHeight="51.0" prefWidth="127.0" text="Figure A">
+            <font>
+                <Font size="26.0" />
+            </font>
+        </Label>
+        <Label layoutX="227.0" layoutY="32.0" prefHeight="51.0" prefWidth="127.0" text="Figure B">
+            <font>
+                <Font size="26.0" />
+            </font>
+        </Label>
+        <Button onAction="#handleDrawBButtonAction" layoutX="227.0" layoutY="133.0" mnemonicParsing="false" text="Draw figure" />
+        <ChoiceBox value="yes" fx:id="propinquity" layoutX="117.0" layoutY="189.0" prefWidth="150.0" />
+
+        <Button fx:id="submit" onAction="#handleSubmitButtonAction" 
+                layoutX="166.0" layoutY="250.0" mnemonicParsing="false" text="Done" />
+    </children>
+</AnchorPane>
